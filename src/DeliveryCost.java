@@ -23,15 +23,17 @@ public class DeliveryCost {
         }
         System.out.println("What type of service are you using?z\n1. Registered Delivery, 1st Class\n2. Standard 1st Class\n3. Standard 2nd Class\n 4. 48 Hrs Recorded Delivery");
         Scanner sc = new Scanner(System.in);
+        double delivery1 = 0.0;
         int answer1 = sc.nextInt();
         if(answer1==1){
-
+            delivery1 += 9.15;
         }else if(answer1==2){
-
+            delivery1 += 5.50;
         }else if(answer1==3){
-
+            delivery1 += 2.40;
         }else if(answer1==4){
-
+            delivery1 += 7.20;
         }
+        System.out.println("Delivery Cost: "+delivery1);
     }
 }
