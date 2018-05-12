@@ -26,8 +26,7 @@ public class DeliveryCost {
         double delivery1 = 0.00;
         int answer1 = sc.nextInt();
 
-        System.out.println("By how much is your product over the weight per unit?\n1. 1 Unit\n2. 2 Units\n3. 3 Units\n4. 4 Units\n5. 5 Units\n6. Over 5 Units");
-        double weightexceed = 0.00;
+        System.out.println("By how much is your product over the weight per unit?\n1. 1 Unit\n2. 2 Units\n3. 3 Units\n4. 4 Units\n5. Over 4 Units");
 
         int check5 = 0;
         int answer2 = sc.nextInt();
