@@ -21,15 +21,17 @@ public class DeliveryCost {
             public double third = 0.20;
             public double fourth = 1.00;
         }
+        //this will ask the user what type of service they are using so that the program can calculate a price for them.
         System.out.println("What type of service are you using?z\n1. Registered Delivery, 1st Class\n2. Standard 1st Class\n3. Standard 2nd Class\n4. 48 Hrs Recorded Delivery");
         Scanner sc = new Scanner(System.in);
         double delivery1 = 0.00;
         int answer1 = sc.nextInt();
 
+        //this will ask the user how much weight their particular delivery can gone over.
         System.out.println("By how much is your product over the weight per unit?\n1. 1 Unit\n2. 2 Units\n3. 3 Units\n4. 4 Units\n5. Over 4 Units");
-
         int check5 = 0;
         int answer2 = sc.nextInt();
+
         if(answer1==1){
             delivery1 += 7.15;
             if(answer2==1){
