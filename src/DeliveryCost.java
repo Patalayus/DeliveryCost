@@ -32,6 +32,7 @@ public class DeliveryCost {
         int check5 = 0;
         int answer2 = sc.nextInt();
 
+        //this if statement will execute if the user has selected the primary method of delivery.
         if(answer1==1){
             delivery1 += 7.15;
             if(answer2==1){
@@ -46,6 +47,7 @@ public class DeliveryCost {
                 check5 = 1;
                 delivery1 += 10.00;
             }
+            //this if statement will execute if the user has selected the secondary method of delivery.
         }else if(answer1==2){
             delivery1 += 5.00;
             if(answer2==1){
@@ -60,6 +62,7 @@ public class DeliveryCost {
                 check5 = 1;
                 delivery1 += 2.50;
             }
+            //this if statement will execute if the user has selected the third method of delivery.
         }else if(answer1==3){
             delivery1 += 2.20;
             if(answer2==1){
@@ -74,6 +77,7 @@ public class DeliveryCost {
                 check5 = 1;
                 delivery1 += 1.00;
             }
+            //this if statement will execute if the user has selected the fourth method of delivery.
         }else if(answer1==4){
             delivery1 += 6.20;
             if(answer2==1){
@@ -89,11 +93,16 @@ public class DeliveryCost {
                 delivery1 += 5.00;
             }
         }
+            //this if statement will execute if the user has not selected that they are using over 4 units of weight.
         if(check5 == 0){
             System.out.println("Delivery Cost: £" + delivery1);
-        }else if(check5 == 1){
+        }
+        //this if statement will execute if the user has selected that they are ordering over 4 units of weight.
+        else if(check5 == 1){
             System.out.println("Your delivery cost is over £"+ delivery1);
-        }else{
+        }
+        //this if statement will execute if the user hasn't selected the correct or valid inputs.
+        else{
             System.out.println("Please enter a valid input");
         }
     }
