@@ -21,9 +21,12 @@ public class DeliveryCost {
             public double third = 0.20;
             public double fourth = 1.00;
         }
+        Scanner sc = new Scanner(System.in);
+        System.out.println("1. Start Delivery Cost Calculation\n2. Help");
+        int option = sc.nextInt();
+        if(option==1){
         //this will ask the user what type of service they are using so that the program can calculate a price for them.
         System.out.println("What type of service are you using?z\n1. Registered Delivery, 1st Class\n2. Standard 1st Class\n3. Standard 2nd Class\n4. 48 Hrs Recorded Delivery");
-        Scanner sc = new Scanner(System.in);
         double delivery1 = 0.00;
         int answer1 = sc.nextInt();
 
@@ -104,6 +107,9 @@ public class DeliveryCost {
         //this if statement will execute if the user hasn't selected the correct or valid inputs.
         else{
             System.out.println("Please enter a valid input");
+        }}
+        else{
+            System.out.println("For this program, you will need to enter certain different options for your delivery and\nusing these different options, the program will be able to calculate the cost for your delivery of the different items\nyou will need to enter the type of delivery as well as the extra weight in which the delivery is, over the base weight.");
         }
     }
 }
