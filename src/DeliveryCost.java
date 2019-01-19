@@ -16,6 +16,7 @@ public class DeliveryCost {
         double delivery1 = 0.00;
         int answer1 = sc.nextInt();
 
+
         //this will ask the user how much weight their particular delivery can gone over.
         System.out.println("By how much is your product over the weight per unit?\n1. 1 Unit" +
                 "\n2. 2 Units\n3. 3 Units\n4. 4 Units\n5. Over 4 Units");
